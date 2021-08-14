@@ -1,0 +1,63 @@
+<!--
+Vijaya Anisetti
+vijaya_anisetti@student.uml.edu
+File: hw3.html
+Assignment: Creating an Interactive Dynamic Table--HW TOKEN
+Created a wepage that has a dynamically changing multiplication table based on the user's 
+input. This file consists of the html and javascript code that allows me to create the 
+table and carry out the multiplication functions. 
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Dynamic Multiplication Table</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="hw3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div id="header">
+			<header>
+                <h1>
+                    Dynamic Multiplication Table
+                </h1>
+            </header>
+        </div>
+
+  
+                
+        <div class = "wrapper">
+        <!--Code for form was taken from W3Schools Website-->
+            <form id="form3" action="#">
+
+                <label for="lowcol">Low Range for Column </label><br>
+                <input type="number"  id="lowcol" name="lowcol"><br>
+                <p id="demo"></p> <!-- got the idea to do this from Jason Lazera to fix an issue-->
+
+                <label for="highcol">High Range for Column </label><br>
+                <input type="number"  id="highcol" name="highcol"><br>
+                <p id="demo2"></p>
+
+                <label for="lowrow">Low Range for Row </label><br>
+                <input type="number"  id="lowrow" name="lowrow"><br>
+                <p id="demo3"></p>
+
+                <label for="highrow">High Range for Row  </label><br>
+                <input type="number"  id="highrow" name="highrow"><br><br>
+                <p id="demo4"></p>
+
+                <input type="button"  id = "button" value="Submit" onclick="error_check()"></button>
+                </form>
+        </div>
+         <!--<p id="demo"></p>-->
+
+         <script src="javascript.js"></script>
+         <div id = "tablearea">
+         </div>
+         </body>
+     </html>
