@@ -1,0 +1,91 @@
+/*
+Vijaya Anisetti
+vijaya_anisetti@student.uml.edu
+File: hw3.css
+Assignment: Creating an Interactive Dynamic Table--HW TOKEN
+This file consists fo the css required to make the table pretty. 
+Use css properties to give the table a clean look. 
+Scrollable Table properties included-- you gotta swipe left and right and there 
+isn't an actual scroll bar you can see but it pops up when you scroll horizontally
+and vertically. 
+*/
+
+/*
+first few properties set the colors and format the form and table*/
+
+header{
+    color:#31124e;
+    font-family:monospace;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+
+
+input[type=number] {
+    width: 10%;
+    padding: 12px 20px;
+    margin:  12px 20px;
+    }
+
+
+  
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 12px 20px;
+    cursor: pointer;
+    }
+  
+
+
+label{
+    color: rgb(150, 101, 179);
+    font-family:monospace;
+    font-size: 18px;
+    padding-left: 25px;
+  }
+  
+  /*
+  Did this so that the form and table could be viewed on the same page.*/
+
+form{
+    display: flex;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    /*flex:50%;*/
+    }
+
+
+    
+#tablearea{
+    margin-left: auto;
+    margin-right: auto;
+    width:950px;
+    height:700px;
+    overflow: scroll;
+}
+
+/*
+Added some styling to make the table more pleasant*/
+table tr:nth-child(even) {background: rgb(148, 177, 161)}
+table tr:nth-child(odd) {background: rgb(99, 146, 126)}
+table tr:nth-child(1){background-color: #b4a0be;}
+table td:nth-child(1){background-color: #b4a0be;}
+
+
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+    }
+
